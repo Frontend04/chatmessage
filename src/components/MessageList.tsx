@@ -2,6 +2,7 @@ import React from "react";
 import { CircularProgress, Typography } from "@mui/material";
 import { MessageListProps } from "../types";
 import Message from "./Message";
+import "../App.css";
 
 const MessageList: React.FC<MessageListProps> = ({ messages, loading }) => {
   if (loading) {
