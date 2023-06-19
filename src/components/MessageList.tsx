@@ -6,7 +6,7 @@ import "../App.css";
 
 const MessageList: React.FC<MessageListProps> = ({ messages, loading }) => {
   if (loading) {
-    return <CircularProgress />;
+    return <CircularProgress id="loading" />;
   }
   if (messages.length === 0) {
     return <Typography variant="body1">No messages yet.</Typography>;
